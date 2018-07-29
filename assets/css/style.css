@@ -1,0 +1,23 @@
+
+body{
+    background-image: url("../images/796108.jpg");
+    background-size: 100%;
+    /* background-repeat: no-repeat fixed; */
+}
+
+.wrapper{
+    width: 900px;
+    margin:0 auto;
+    margin-top: 40px;
+    background-color: transparent;
+}
+
+.trivia{
+    font-size: 40px;
+    text-align: center;
+}
+
+img1{
+    margin:0 auto; 
+    a
+}
