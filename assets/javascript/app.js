@@ -8,3 +8,19 @@
 //   * If the player chooses the wrong answer, tell the player they selected the wrong option and then display the correct answer. Wait a few seconds, then show the next question.
 
 // * On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
+$(document).ready(function () {
+
+// State manangement variables
+var correctAnswers = 0;
+var incorrectAnswers = 0;
+
+
+// set initial timer
+function fiveSeconds() {
+
+    // in the element with an id of time-left add an h2 saying About 10 Seconds Left!
+    // console log 10 seconds left
+    $("#time-left").append("<h2>About 10 Seconds Left!</h2>");
+    console.log("10 seconds left");
+  }
+});

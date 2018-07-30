@@ -2,22 +2,25 @@
 body{
     background-image: url("../images/796108.jpg");
     background-size: 100%;
-    /* background-repeat: no-repeat fixed; */
+    background-repeat: no-repeat fixed;
 }
 
 .wrapper{
     width: 900px;
     margin:0 auto;
-    margin-top: 40px;
-    background-color: transparent;
+    margin-top: 60px;
+    background-image: url(../images/stars.jpg);
 }
 
 .trivia{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
+    color: #00afc7;
+    text-shadow: 2px 2px #9ec449;
+    font-family: 'Kirang Haerang', cursive;
 }
 
-img1{
+.img1{
     margin:0 auto; 
-    a
+    display: block;
 }
