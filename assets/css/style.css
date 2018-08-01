@@ -39,3 +39,17 @@ h1{
     1px 1px 0 #000;
     font-family: 'Kirang Haerang', cursive;
 }
+
+#timer{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;  
+    color: #00afc7;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-family: 'Kirang Haerang', cursive;
+}

@@ -5,7 +5,7 @@ $(document).ready(function () {
   var correct = 0;
   var incorrect = 0;
   var userChoice;
-  
+
 
   // create an array of objects for the questions, answer choices and correct answer...
   var questions = [{
@@ -42,15 +42,33 @@ $(document).ready(function () {
     // Hide the start button
     $(".startBtn").hide();
     // display timer
+    var count = 30;
+
+    var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+
+    function timer() {
+      count = count - 1;
+      if (count <= -1) {
+        clearInterval(counter);
+        //counter ended, do something here
+        return;
+      }
+
+      document.getElementById("timer").innerHTML=count + " secs";
+    }
 
     // display first question
     var question1 = questions[0].question;
     $(".question").append(question1);
-    // display answer choices
-    for( i = 0; i < questions.answers; i++){
-      $("ul").append(this);
-      console.log(this);
+
+    var answerChoices = questions[0].answers;
+    console.log(answerChoices);
+    for (i = 0; i < answerChoices.length; i++) {
+      console.log(answerChoices[i]);
+      $(".answerChoices").append(answerChoices[i]);
     }
+
+
   });
 });
 
