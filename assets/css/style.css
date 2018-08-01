@@ -9,18 +9,33 @@ body{
     width: 900px;
     margin:0 auto;
     margin-top: 60px;
+    padding: 20px;
     background-image: url(../images/stars.jpg);
 }
 
-.trivia{
-    font-size: 50px;
+h1{
+    font-size: 70px;
+    margin-top: -43px;
     text-align: center;
     color: #00afc7;
-    text-shadow: 2px 2px #9ec449;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-family: 'Kirang Haerang', cursive;
 }
 
 .img1{
     margin:0 auto; 
     display: block;
+}
+.question{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;  
+    color: #00afc7;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-family: 'Kirang Haerang', cursive;
 }
