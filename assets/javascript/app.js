@@ -24,7 +24,7 @@ $(document).ready(function () {
     correctAnswer: "'The Flesh Curtains'"
   },
   {
-    question: "What are the 'ball fondlers'?",
+    question: "What are the 'Ball Fondlers'?",
     answers: ["Not the answer", "Rick and Morty’s favorite TV show", "Not the answer", "Not the answer"],
     correctAnswer: "Rick and Morty’s favorite TV show"
   },
@@ -38,23 +38,21 @@ $(document).ready(function () {
 
   // game start..
   $(".startBtn").click(function () {
-    // set initial timer 
+     
     // Hide the start button
     $(".startBtn").hide();
-    // display timer
-    var count = 30;
 
+    // set initial timer
+    var count = 30;
     var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
 
     function timer() {
       count = count - 1;
       if (count <= -1) {
         clearInterval(counter);
-        //counter ended, do something here
         return;
       }
-
-      document.getElementById("timer").innerHTML=count + " secs";
+      $("#timer").html("00 : " + count + " secs");
     }
 
     // display first question
@@ -63,11 +61,12 @@ $(document).ready(function () {
 
     var answerChoices = questions[0].answers;
     console.log(answerChoices);
+
     for (i = 0; i < answerChoices.length; i++) {
       console.log(answerChoices[i]);
-      $(".answerChoices").append(answerChoices[i]);
+      $(".answerChoices").append(answerChoices[i] + "<br>");
     }
-
+    // I need some sort of answer checker function to campare the users choice to the correct answer.
 
   });
 });
