@@ -39,7 +39,7 @@ h1{
     -1px 1px 0 #000,
     1px 1px 0 #000;
     font-family: 'Kirang Haerang', cursive;
-    
+
 }
 
 .question, .answerChoices{
@@ -56,7 +56,7 @@ h1{
     font-family: 'Kirang Haerang', cursive;
 }
 
-#timer{
+.timer{
     font-size: 30px;
     text-align: center;
     margin-top: 30px;

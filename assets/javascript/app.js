@@ -52,10 +52,10 @@ $(document).ready(function () {
         clearInterval(counter);
         return;
       }
-      $("#timer").html("00 : " + count + " secs");
+      $(".timer").html("00 : " + count + " secs");
     }
 
-    // display first question
+    // display first question...
     var question1 = questions[0].question;
     $(".question").append(question1);
 
@@ -66,7 +66,10 @@ $(document).ready(function () {
       console.log(answerChoices[i]);
       $(".answerChoices").append(answerChoices[i] + "<br>");
     }
-    // I need some sort of answer checker function to campare the users choice to the correct answer.
+    // asnswer choices need to be tied to a click function to be compared...
+    
+    // I need some sort of answer checker function to campare the users choice to the correct answer...
+
 
   });
 });
